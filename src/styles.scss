@@ -1,0 +1,73 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+  src: url("/assets/fonts/bebasneue_bold-webfont.woff2");
+  font-family: "BebasNeueBold";
+}
+
+@font-face {
+  src: url("/assets/fonts/bebasneue_book-webfont.woff2");
+  font-family: "BebasNeueBook";
+}
+
+.overflow-hide {
+  overflow-y: hidden;
+}
+
+.neutral-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.neutral-link {
+  text-decoration: none;
+  color: inherit;
+  cursor: none;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+body {
+  background-color: #111;
+  padding: 0;
+  margin: 0;
+  cursor: none;
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
+#cursor {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  border-radius: 50%;
+  z-index: 3;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  &.active {
+    display: hidden;
+  }
+}
+
+#cursor-follow {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: rgba(255,255,255,0.4);
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  transition: 100ms;
+  z-index: 3;
+  pointer-events: none;
+  &.active {
+    width: 40px;
+    height: 40px;
+  }
+}

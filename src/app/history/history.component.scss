@@ -1,0 +1,76 @@
+* {
+  color: #f1f1f1;
+}
+
+.history {
+  display: flex;
+  padding-top: 100px;
+  position: relative;
+
+  .overlay-polka {
+    position: absolute;
+    top: 100px;
+    left: 2.5%;
+    width: 25%;
+    z-index: -2;
+    filter: brightness(0.4);
+  }
+
+  .history-heading {
+    text-transform: uppercase;
+    font-family: "BebasNeueBold";
+    letter-spacing: 1px;
+    font-size: 30px;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    span {
+      display: block;
+    }
+
+    .highlight-line {
+      width: 65%;
+      height: 10px;
+      background: linear-gradient(135deg,#f1c40f 10%,#e74c3c 100%);
+      z-index: -2;
+      position: relative;
+      top: -40px;
+      left: -2%;
+    }
+  }
+  .history-content {
+    width: 75%;
+    font-family: "Karla";
+    word-spacing: 5px;
+    font-size: 18px;
+    margin-top: 30px;
+    line-height: 35px;
+  }
+
+  .history-skills {
+    margin-top: 50px;
+    h3 {
+      font-family: "BebasNeueBold";
+      letter-spacing: 1px;
+      font-size: 25px;
+      margin: 15px 0;
+    }
+    .columns {
+      display: flex;
+      .skill-list {
+        width: 50%;
+        padding-left: 2em;
+        font-size: 15px;
+        line-height: 25px;
+
+        .skill-item:before {
+            display: inline-block;
+            content: "-";
+            width: 2em;
+            margin-left: -2em;
+        }
+      }
+    }
+  }
+}

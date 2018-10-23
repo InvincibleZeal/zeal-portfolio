@@ -1,0 +1,94 @@
+.footer {
+  height: 100vh;
+  background: #0a0a0a;
+  color: #f1f1f1;
+  padding-top: 120px;
+  text-align: center;
+  box-sizing: border-box;
+  position: relative;
+
+  .hello {
+    font-family: "BebasNeueBold";
+    font-size: 90px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin: 30px 0;
+  }
+  .discuss {
+    font-family: "Karla";
+    font-size: 25px;
+    margin: 80px 0;
+  }
+  .contact {
+    height: 40px;
+  }
+  .call {
+    display: inline-block;
+    margin: 0 auto;
+    font-family: "Montserrat";
+    text-transform: uppercase;
+    margin: 6px;
+    z-index: 2;
+    position: relative;
+    transition: 500ms;
+    &.expand {
+      letter-spacing: 3px;
+      color: #0a0a0a;
+    }
+  }
+  .highlight {
+    width: 150px;
+    height: 4px;
+    background: linear-gradient(135deg,#f1c40f 10%,#e74c3c 100%);
+    margin: 0 auto;
+    transition: 500ms;
+    &.expand {
+      transform: translateY(-40px);
+      height: 48px;
+      width: 250px;
+    }
+  }
+
+  .social {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+    .social-item {
+      margin: 0 10px;
+      padding: 10px;
+      a {
+        padding: 10px;
+        display: flex;
+        transition: 300ms;
+        align-items: center;
+        cursor: none;
+        img {
+          width: 30px;
+          height: 30px;
+        }
+        &:hover {
+          box-shadow: 0 10px 50px -5px rgba(0,0,0,1);
+          transform: translateY(-5px);
+        }
+      }
+    }
+  }
+  .contribution {
+    p {
+      margin: 0;
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-family: "Karla";
+      span {
+        font-family: "Montserrat";
+        img {
+          width: 15px;
+          position: relative;
+          top: 2px;
+        }
+      }
+    }
+  }
+}

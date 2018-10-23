@@ -1,0 +1,19 @@
+<div class="footer">
+  <h1 class="hello">Say Hello!</h1>
+  <p class="discuss">Have a project you'd like to discuss? I'd love to hear from you.</p>
+
+  <div class="contact">
+    <p (mouseenter)="expand($event, target)" (mouseleave)="collapse($event, target)" class="call"><a class="neutral-link" href="#">Drop me a line</a></p>
+    <div #target class="highlight"></div>
+  </div>
+
+  <ul class="social neutral-list">
+    <li class="social-item"><a href="#"><img src="/assets/images/github-logo.svg" alt=""></a></li>
+    <li class="social-item"><a href="#"><img src="/assets/images/facebook-logo-button.svg" alt=""></a></li>
+    <li class="social-item"><a href="#"><img src="/assets/images/instagram.svg" alt=""></a></li>
+    <li class="social-item"><a href="#"><img src="/assets/images/linkedin-button.svg" alt=""></a></li>
+  </ul>
+  <div class="contribution">
+    <p>Made with <span><img src="/assets/images/heart.svg" alt=""></span> by <span>Ritesh Ganjewala</span></p>
+  </div>
+</div>

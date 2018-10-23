@@ -1,0 +1,20 @@
+<nav class="navbar container">
+  <div class="navbar-brand"><img src="/assets/images/invinciblezeal.svg" alt="hello"></div>
+  <div class="navbar-slider" (click)="handleSliderClick(top, middle, bottom)">
+    <p class="navbar-link">{{navbarMenu}}</p>
+    <!-- <img class="navbar-link-img" src="assets/images/menu.svg" alt=""> -->
+    <svg viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" width="20px" height="20px">
+  		<path id="top" #middle d="M491.318,78.439H20.682C9.26,78.439,0,87.699,0,99.121c0,11.422,9.26,20.682,20.682,20.682h470.636    c11.423,0,20.682-9.26,20.682-20.682C512,87.699,502.741,78.439,491.318,78.439z" data-original="#000000" class="active-path" data-old_color="#f1f1f1" fill="#f1f1f1"/>
+      <path id="middle" #top d="M491.318,235.318H20.682C9.26,235.318,0,244.577,0,256s9.26,20.682,20.682,20.682h470.636    c11.423,0,20.682-9.259,20.682-20.682C512,244.578,502.741,235.318,491.318,235.318z" data-original="#000000" class="active-path" data-old_color="#f1f1f1" fill="#f1f1f1"/>
+  		<path id="bottom" #bottom d="M491.318,392.197H20.682C9.26,392.197,0,401.456,0,412.879s9.26,20.682,20.682,20.682h470.636    c11.423,0,20.682-9.259,20.682-20.682S502.741,392.197,491.318,392.197z" data-original="#000000" class="active-path" data-old_color="#f1f1f1" fill="#f1f1f1"/>
+    </svg>
+  </div>
+</nav>
+<div id="slider-overlay">
+  <ul class="list neutral-list">
+    <li class="item"><a href="#" class="neutral-link"><span>HOME</span></a></li>
+    <li class="item"><a href="#" class="neutral-link"><span>ABOUT</span></a></li>
+    <li class="item"><a href="#" class="neutral-link"><span>CONTACT</span></a></li>
+    <li class="item"><a href="#" class="neutral-link"><span>SUPPORT</span></a></li>
+  </ul>
+</div>

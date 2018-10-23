@@ -1,0 +1,31 @@
+.hero-logo {
+  width: 500px;
+  margin-left: 30px;
+  fill: none;
+  stroke: #fff;
+  stroke-width: 1px;
+  transform: rotate(-25deg);
+  &:hover #z {
+    animation: swoosh 5s linear forwards;
+  }
+  &:hover #e {
+    animation: swoosh 5s linear forwards;
+  }
+  &:hover #a {
+    animation: swoosh 5s linear forwards;
+  }
+  &:hover #l {
+    animation: swoosh 5s linear forwards;
+  }
+}
+
+@keyframes swoosh {
+  from {
+    stroke-dasharray: 250;
+    stroke-dashoffset: 500;
+  }
+  to {
+    stroke-dasharray: 710;
+    stroke-dashoffset: 0;
+  }
+}

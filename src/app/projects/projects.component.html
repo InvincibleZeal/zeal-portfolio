@@ -1,0 +1,15 @@
+<ul class="projects neutral-list container">
+  <li *ngFor="let project of projects" class="project">
+    <div class="project-img">
+      <img src="/assets/images/{{project.image}}" alt="">
+    </div>
+    <div class="project-content">
+      <h1 class="project-heading">{{project.name}}</h1>
+      <p class="project-desc">{{project.specification}}</p>
+      <div class="project-view">
+        <div class="highlight"></div>
+        <p>View Project</p>
+      </div>
+    </div>
+  </li>
+</ul>

@@ -1,0 +1,23 @@
+* {
+  font-family: "Montserrat";
+  color: #f1f1f1;
+}
+
+p {
+  margin: 0;
+  margin-top: 50px;
+  font-size: 14px;
+  height: 20px;
+  display: flex;
+  width: 500px;
+  letter-spacing: 1px;
+  justify-content: space-between;
+  span {
+    text-transform: uppercase;
+    transition: 300ms;
+    &:hover {
+      border-bottom: 5px solid #e74c4c;
+      transform: translateY(-5px);
+    }
+  }
+}
