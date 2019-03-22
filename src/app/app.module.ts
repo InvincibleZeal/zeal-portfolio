@@ -13,22 +13,22 @@ import { FooterComponent } from './footer/footer.component';
 import { HeroLogoComponent } from './hero-logo/hero-logo.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    NavbarComponent,
-    HeroComponent,
-    HeroBrandComponent,
-    HeroSocialComponent,
-    HistoryComponent,
-    ProjectsComponent,
-    FooterComponent,
-    HeroLogoComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        NavbarComponent,
+        HeroComponent,
+        HeroBrandComponent,
+        HeroSocialComponent,
+        HistoryComponent,
+        ProjectsComponent,
+        FooterComponent,
+        HeroLogoComponent,
+    ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }
